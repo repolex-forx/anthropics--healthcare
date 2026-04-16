@@ -1,0 +1,16 @@
+[2026-04-16T04:15:12Z] === ENRICH ITERATION 2 START | repo=anthropics/healthcare sha=f7784398 ===
+[2026-04-16T04:15:12Z] [iter=2] PHASE START: enrich repo=anthropics/healthcare sha=f7784398 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/f7784398-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/f77843986830f65e040507240bb33f22a7fea06c.nq.gz
+[2026-04-16T04:15:12Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-16T04:15:12Z] [iter=2] AST store loaded triples=19131 load_secs=0 mem_mb=112 MB
+[2026-04-16T04:15:12Z] [iter=2] Step 2: Finding LSP targets mem_mb=112 MB
+[2026-04-16T04:15:12Z] [iter=2] LSP targets found call_sites=94 imports=11 extends=0 implements=0 secs=0
+[2026-04-16T04:15:12Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=112 MB
+[2026-04-16T04:15:12Z] [iter=2] Position index built positions=1309 nodes_with_types=1673 secs=0 mem_mb=112 MB
+[2026-04-16T04:15:12Z] [iter=2] Step 3: Starting LSP resolution mem_mb=112 MB already_completed_types=[] already_completed_files=0
+[2026-04-16T04:15:12Z] [iter=2] Resolving target type target_type=call_site count=94
+[2026-04-16T04:15:16Z] [iter=2] Target type resolved target_type=call_site resolved=73 errors=21 secs=4 mem_mb=112 MB
+[2026-04-16T04:15:16Z] [iter=2] Resolving target type target_type=import_statement count=11
+[2026-04-16T04:15:17Z] [iter=2] Target type resolved target_type=import_statement resolved=11 errors=0 secs=1 mem_mb=112 MB
+[2026-04-16T04:15:19Z] [iter=2] Step 5: Writing final enrichment file triples=927
+[2026-04-16T04:15:19Z] [iter=2] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/f77843986830f65e040507240bb33f22a7fea06c.nq.gz size_kb=11
+[2026-04-16T04:15:19Z] [iter=2] PHASE END: enrich elapsed_s=7 elapsed_min=0.1 total_triples=927
